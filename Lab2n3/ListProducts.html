@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Lab2n3/PRN221</h2>
+        <form class="search-form" onsubmit="return validate()" method="post">
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton" title="Search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="top-menu">
+            <li><a title="Home" href="#cart" class="active"><i class="fa fa-home"></i></a></li>
+            <li><a title="View cart" href="#cart"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a title="Trending products" href="#trend"><i class="fa fa-heart"></i></a></li>
+            <li><a title="Order Tracking" href="#order-tracking"><i class="fa fa-truck"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="filter-products">
+            <form method="post" id="form">
+                <h3>Category:</h3>
+                <select>
+                    <option>All Categories</option>
+                    <!-- foreach load more option -->
+                </select>
+                <h3>Supplier:</h3>
+                <select>
+                    <option>All Supplier</option>
+                    <!-- foreach load more option -->
+                </select>
+                <h3>Sort By:</h3>
+                <input type="radio" checked value="ProductNameAZ" name="SortBy" /> <label>Product Name (A-Z)</label>
+                <br>
+                <input type="radio" checked value="ProductNameZA" name="SortBy" /> <label>Product Name (Z-A)</label>
+                <br><br>
+                <input type="radio" value="UnitPriceAZ" name="SortBy" /> <label>Unit Price (A-Z)</label>
+                <br>
+                <input type="radio" value="UnitPriceZA" name="SortBy" /> <label>Unit Price (Z-A)</label>
+                <br><br>
+                <input type="radio" value="UnitsInStockAZ" name="SortBy" /> <label>Units in stock (A-Z)</label>
+                <br>
+                <input type="radio" value="UnitsInStockZA" name="SortBy" /> <label>Units in stock (Z-A)</label>
+                <input type="submit" class="btn-apply-filter-products" value="Apply" />
+            </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section class="product">
+                        <h3>Louisiana Fiery Hot Pepper Sauce</h3>
+                        <p class="price"> $50</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Original Frankfurter grüne Soße</h3>
+                        <p class="price"> $75</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: Out of Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Product A</h3>
+                        <p class="price"> $50</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Original Frankfurter grüne Soße</h3>
+                        <p class="price"> $75</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: Out of Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="product">
+                        <h3>Mozzarella di Giovanni</h3>
+                        <p class="price"> $100</p>
+                        <p class="Quantity-per-unit">Quantity Per Unit: 24 boxes x 2 pies</p>
+                        <p class="status">Status: In Stock</p>
+                        <div class="btn-add-to-cart">
+                            <button>
+                                <i class="fa fa-cart-plus"></i>
+                                Add to cart
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="pagination-container">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
