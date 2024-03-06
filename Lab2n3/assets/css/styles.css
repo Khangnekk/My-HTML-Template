@@ -200,3 +200,72 @@ select {
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
+
+.cart-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-header th{
+    padding: 0.5em 2em;
+    text-align: start;
+    background-color: rgba(226, 226, 226, 0.685);
+    color: #000000;
+}
+
+.table-body td{
+    padding: 0 1em;
+    margin: -0.25em 0;
+}
+
+.table-body{
+    border: 1px solid #000000;
+}
+.cart-quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border: transparent;
+}
+
+.btn-quantity{
+    cursor: pointer;
+    margin: 0 1em;
+    padding: 0.25em;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.cart-order-table{
+    margin-top: 2em;
+}
+
+.table-foot{
+    text-align: right;
+    justify-content: flex-end;
+    border: transparent;
+    font-size: 1.5em;
+}
+
+.total-cart{
+    padding: 1em 1em 0.5em 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn-payment{
+    padding: 0.45em 2.5em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: rgb(54, 150, 228);
+    color: #f7f7f7;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-payment:hover{
+    transform: scale(1.2);
+}

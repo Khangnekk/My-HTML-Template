@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Lab2n3/PRN221</h2>
+        <form class="search-form" onsubmit="return validate()" method="post">
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton" title="Search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="top-menu">
+            <li><a title="Home" href="ListProducts.html" ><i class="fa fa-home"></i></a></li>
+            <li><a title="View cart" href="Cart.html" class="active"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a title="Trending products" href="#trend"><i class="fa fa-heart"></i></a></li>
+            <li><a title="Order Tracking" href="#order-tracking"><i class="fa fa-truck"></i></a></li>
+        </ul>
+    </header>
+    <main class="cart-main">
+        <section class="cart-order">
+
+            <table class="cart-order-table" border="1px" style="border-collapse: collapse;">
+                <thead>
+                    <tr class="table-header">
+                        <th>Number</th>
+                        <th>Product Name</th>
+                        <th style="text-align: center;">Price</th>
+                        <th style="text-align: center;">Quantity</th>
+                        <th style="text-align: center;">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-body">
+                        <td style="text-align: center;">1</td>
+                        <td>Louisiana Fiery Hot Pepper Sauce</td>
+                        <td style="text-align: center;">$50</td>
+                        <td class="cart-quantity">
+                            <i class="fa fa-minus btn-quantity"></i>
+                            <p>3</p>
+                            <i class="fa fa-plus btn-quantity"></i>
+                        </td>
+                        <td style="text-align: center;">$150</td>
+                    </tr>
+                    <tr class="table-body">
+                        <td style="text-align: center;">2</td>
+                        <td>Louisiana </td>
+                        <td style="text-align: center;">$50</td>
+                        <td class="cart-quantity">
+                            <i class="fa fa-minus btn-quantity"></i>
+                            <p>2</p>
+                            <i class="fa fa-plus btn-quantity"></i>
+                        </td>
+                        <td style="text-align: center;">$100</td>
+                    </tr>
+                    <tr class="table-body">
+                        <td style="text-align: center;">3</td>
+                        <td>Louisiana </td>
+                        <td style="text-align: center;">$50</td>
+                        <td class="cart-quantity">
+                            <i class="fa fa-minus btn-quantity"></i>
+                            <p>3</p>
+                            <i class="fa fa-plus btn-quantity"></i>
+                        </td>
+                        <td style="text-align: center;">$150</td>
+                    </tr>
+                </tbody>
+                <tfoot class="table-foot">
+                    <tr>
+                        <td colspan="5" class="total-cart">
+                            Total: $400
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <button class="btn-payment">
+                                Payment
+                            </button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
