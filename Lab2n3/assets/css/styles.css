@@ -5,6 +5,8 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +93,6 @@ main {
 
 
 .filter-products {
-    /* margin: 10px; */
     padding: 1em;
     border-right: 1px solid #ccc;
     background-color: #f7f7f7;
@@ -153,12 +154,12 @@ select {
     font-size: 0.7em;
 }
 
-.btn-add-to-cart {
+.add-to-cart {
     display: flex;
     justify-content: center;
 }
 
-.btn-add-to-cart button {
+.add-to-cart button {
     width: 70%;
     padding: 0.25em 0;
     font-size: 1.2em;
@@ -170,13 +171,16 @@ select {
     transition: all 0.3s ease;
 }
 
-.btn-add-to-cart button:hover {
+.add-to-cart button:hover {
     transform: scale(1.2);
     background-color: rgb(33, 136, 219);
-    ;
 }
 
-.btn-add-to-cart button i {
+.add-to-cart button:active{
+    transform: scale(1.1);
+}
+
+.add-to-cart button i {
     font-size: 1.2em;
 }
 
@@ -253,6 +257,10 @@ select {
     transform: scale(1.25);
 }
 
+.btn-quantity:active{
+    transform: scale(0.7);
+}
+
 .cart-order-table{
     margin-top: 2em;
 }
@@ -294,4 +302,17 @@ select {
     justify-content: center;
     align-items: center;
     background-color: rgba(226, 226, 226, 0.685);
+}
+
+/* styles.css */
+.toast {
+    position: fixed;
+    top: 5em;
+    right: 20px;
+    background-color: rgb(0, 150, 100);
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    display: none;
+    transition: all 1s ease;
 }
