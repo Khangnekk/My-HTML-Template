@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h2 class="logo">Lab2n3/PRN221</h2>
+        <a href="ListProducts.html" class="logo"><h2 >Lab2n3/PRN221</h2></a>
         <form class="search-form" onsubmit="return validate()" method="post">
             <div class="wrap">
                 <div class="search">
@@ -31,13 +31,12 @@
             <li><a title="Order Tracking" href="#order-tracking"><i class="fa fa-truck"></i></a></li>
         </ul>
     </header>
-    <main class="cart-main">
-        <section class="cart-order">
-
+    <main class="cart-main" >
+        <section class="cart-order" style="min-height: 81vh;">
             <table class="cart-order-table" border="1px" style="border-collapse: collapse;">
                 <thead>
                     <tr class="table-header">
-                        <th>Number</th>
+                        <th>No.</th>
                         <th>Product Name</th>
                         <th style="text-align: center;">Price</th>
                         <th style="text-align: center;">Quantity</th>
@@ -87,8 +86,8 @@
                     </tr>
                     <tr>
                         <td colspan="5">
-                            <button class="btn-payment">
-                                Payment
+                            <button class="btn-order">
+                                Order now
                             </button>
                         </td>
                     </tr>
@@ -97,5 +96,9 @@
         </section>
     </main>
 </body>
-
+<footer>
+    <section class="footer" style="position: relative; margin-top: 1em;">
+        <p>Copyright © 2024 Nguyen Luong Khang (HE161660) PRN221</p>
+    </section>
+</footer>
 </html>
